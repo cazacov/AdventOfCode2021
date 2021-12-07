@@ -1,6 +1,5 @@
-﻿using AocHelpers;
+﻿Console.WriteLine("Advent of Code 2021, day 6");
 
-Console.WriteLine("Advent of Code 2021, day 6");
 var fishes = System.IO.File.ReadAllText("input.txt").Split(",").ToList().ConvertAll(Int32.Parse).ConvertAll(x => new Fish(x, 7));
 Puzzle1(fishes);
 
